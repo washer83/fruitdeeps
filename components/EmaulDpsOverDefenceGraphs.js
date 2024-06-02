@@ -16,7 +16,7 @@ import {
 // import Worker from 'worker-loader!../lib/workers/Worker.js';
 const colors = ["#9eff74", "#74c7ff", "#ff8274", "#eeeeee"];
 
-export class DpsOverDefenceGraph extends Component {
+export class EmaulDpsOverDefenceGraph extends Component {
     constructor(props) {
         super(props);
         if(typeof window !== "undefined"){
@@ -81,20 +81,20 @@ export class DpsOverDefenceGraph extends Component {
             />
         ));
 
-        let dwhLines = [];
+        let elderLines = [];
         let def = this.props.state.monster.stats.def;
-        let dwhDef = def;
+        let elderDef = def;
         for (let i = 0; i < 5; i++) {
-            if (Math.trunc((dwhDef * 3) / 10) > 0) {
-                dwhDef = dwhDef - Math.trunc((dwhDef * 3) / 10);
-                dwhLines.push(
+            if (Math.trunc((elderDef * 3.5) / 10) > 0) {
+                elderDef = elderDef - Math.trunc((elderDef * 3.5) / 10);
+                elderLines.push(
                     <ReferenceLine
-                        x={dwhDef}
+                        x={elderDef}
                         stroke="#ff8274"
                         style={{ strokeDasharray: "15,10" }}
                     >
                         <Label
-                            value={i + 1 + " dwh"}
+                            value={i + 1 + " elder"}
                             angle="-90"
                             dx={-14}
                             dy={18}
@@ -110,7 +110,7 @@ export class DpsOverDefenceGraph extends Component {
             }
         }
 
-        dwhLines.push(
+        elderLines.push(
             <ReferenceLine
                 x={Math.max(def - Math.floor(def / 10) - 1, 0)}
                 stroke="#eeeeee"
@@ -137,7 +137,7 @@ export class DpsOverDefenceGraph extends Component {
                         alignItems: "center",
                     }}
                 >
-                    Dps as a Function of Defence (DWH) @{" "}
+                    Dps as a Function of Defence (Elder) @{" "}
                     {this.props.state.monster.name}
                     <span style={{ display: "inline-flex" }}>
                         <label
@@ -221,7 +221,7 @@ export class DpsOverDefenceGraph extends Component {
                             </YAxis>
                             <Tooltip className="highlight-section" />
                             <Legend verticalAlign="top" />
-                            {dwhLines}
+                            {elderLines}
                             {lines}
                         </LineChart>
                     </ResponsiveContainer>
