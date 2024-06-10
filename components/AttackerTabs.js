@@ -5,6 +5,7 @@ import { AttackerPrayers } from './AttackerPrayers.js';
 import { AttackerSpells } from './AttackerSpells.js';
 import { AttackerImport } from './AttackerImport.js';
 import { AttackerRelics } from './AttackerRelics.js';
+import { GearPresets } from './GearPresets.js';
 import Image from "next/image";
 
 class Tab extends Component {
@@ -40,13 +41,13 @@ export class AttackerTabs extends Component {
         var displayBox = (
             <div>
                     <div style={{display: tab == 0 ? "block" : "none"}}><AttackerEquipment player={this.props.player} setPlayer={this.props.setPlayer} /></div> 
-                    <div style = { { display: tab == 1 ? "block" : "none" } } > <AttackerStats player={this.props.player} setPlayer={this.props.setPlayer} /> </div> 
-                    <div style = { { display: tab == 2 ? "block" : "none" } } > <AttackerPrayers player={this.props.player} setPlayer={this.props.setPlayer} /></div> 
-                    <div style = { { display: tab == 3 ? "block" : "none" } } > <AttackerSpells player={this.props.player} setPlayer={this.props.setPlayer} /> </div> 
-                    <div style = { { display: tab == 4 ? "block" : "none" } } > <AttackerRelics player={this.props.player} setPlayer={this.props.setPlayer} /> </div> 
-                    <div style = { { display: tab == 5 ? "block" : "none" } } > <AttackerImport player={this.props.player} setPlayer={this.props.setPlayer} /> </div>
+                    <div style={{display: tab == 1 ? "block" : "none"}}><AttackerStats player={this.props.player} setPlayer={this.props.setPlayer} /></div> 
+                    <div style={{display: tab == 2 ? "block" : "none"}}><AttackerPrayers player={this.props.player} setPlayer={this.props.setPlayer} /></div> 
+                    <div style={{display: tab == 3 ? "block" : "none"}}><AttackerSpells player={this.props.player} setPlayer={this.props.setPlayer} /></div> 
+                    <div style={{display: tab == 4 ? "block" : "none"}}><AttackerRelics player={this.props.player} setPlayer={this.props.setPlayer} /></div> 
+                    <div style={{display: tab == 5 ? "block" : "none"}}><AttackerImport player={this.props.player} setPlayer={this.props.setPlayer} /></div>
+                    <div style={{display: tab == 6 ? "block" : "none"}}><GearPresets player={this.props.player} setPlayer={this.props.setPlayer} /></div>
             </div>
-
         )
         return (
             <div>
@@ -57,6 +58,7 @@ export class AttackerTabs extends Component {
                     <Tab tab="3" tabSelected={this.state.tabSelected} setTab={this.setTab} imgSrc="/assets/svg/spellbook_icon.svg"></Tab>
                     <Tab tab="4" tabSelected={this.state.tabSelected} setTab={this.setTab} imgSrc="/assets/svg/toggles_icon.svg"></Tab>
                     <Tab tab="5" tabSelected={this.state.tabSelected} setTab={this.setTab} imgSrc="/assets/svg/export_icon.svg"></Tab>
+                    <Tab tab="6" tabSelected={this.state.tabSelected} setTab={this.setTab} imgSrc="/assets/svg/equipment_icon.svg"></Tab>
                 </div>
                 {displayBox}
             </div>
