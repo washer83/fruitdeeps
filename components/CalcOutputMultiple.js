@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import { CalcOutput } from "./CalcOutput.js";
 import { CalcOutputTtkChart } from "./CalcOutputTtkChart.js";
 import { CalcOutputOptimizationGraph } from "./CalcOutputOptimizationGraph.js";
-import { DpsOverDefenceGraph } from "./DpsOverDefenceGraph.js";
-import { EmaulDpsOverDefenceGraph } from "./EmaulDpsOverDefenceGraphs.js";
+//import { DpsOverDefenceGraph } from "./DpsOverDefenceGraph.js";
+//import { EmaulDpsOverDefenceGraph } from "./EmaulDpsOverDefenceGraphs.js";
+import { CombinedDpsOverDefenceGraph } from "./CombinedDpsOverDefenceGraph.js";
 import { Dps } from "../lib/dps/Dps.js";
 import Image from "next/image";
+//import { ExpectedDefenceReductionGraph } from "./ExpectedDefenceReductionGraph.js";
 
 export class CalcOutputMultiple extends Component {
     constructor(props) {
@@ -122,8 +124,44 @@ export class CalcOutputMultiple extends Component {
                 );
             }
         }
+            return (
+            <div className="flex-container-vertical">
+                {outputBlocks}
+                {false ? (
+                    <CalcOutputTtkChart
+                        data={this.state.ttkManager.map(
+                            (ttk) => ttk.ttk.ttkList
+                        )}
+                    />
+                ) : null}
+                <div>
+                    <h2 className="flex-valign">
+                        <img    
+                            style={{ height: "0.75em" }}
+                            src="/assets/svg/stats_icon.svg"
+                        />
+                        <span className="space-left">Set Comparison Graphs</span>
+                    </h2>
+                    <div
+                        className="flex-container-vertical"
+                        style={{ padding: "1em", border: "1px dashed #666" }}
+                    >
+                        <CalcOutputOptimizationGraph
+                            calcsList={calcsList}
+                            state={this.props.state}
+                        />
+                        <CombinedDpsOverDefenceGraph
+                            calcsList={calcsList}
+                            state={this.props.state}
+                        />
+                    </div>
+                </div>{" "}
+            </div>
+        );
+    }
+}
 
-        return (
+        /* return (
             <div className="flex-container-vertical">
                 {outputBlocks}
                 {false ? (
@@ -163,3 +201,4 @@ export class CalcOutputMultiple extends Component {
         );
     }
 }
+    */
