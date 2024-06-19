@@ -15,7 +15,7 @@ const darts = {
 }
 
 const customs = [
-    {"name":"Osmumten's fang","slot":"weapon","bonuses":[105,75,0,0,0,0,0,0,0,0,103,0,0,0],"id":26219,"category":"Stab Sword","speed":5},
+    /*{"name":"Osmumten's fang","slot":"weapon","bonuses":[105,75,0,0,0,0,0,0,0,0,103,0,0,0],"id":26219,"category":"Stab Sword","speed":5},
     {"name":"Elidinis' ward","slot":"shield","bonuses":[0,0,0,0,0,5,3,9,0,6,0,0,3,0],"id":25985},
     {"name":"Elidinis' ward (f)","slot":"shield","bonuses":[0,0,0,25,0,53,55,73,2,52,0,0,5,4],"id":27251},
     {"name":"Tumeken's shadow","slot":"weapon","bonuses":[0,0,0,35,0,0,0,0,20,0,0,0,0,1],"id":27277,"category":"Powered Staff","speed":5},
@@ -25,7 +25,8 @@ const customs = [
     {"name":"Masori chaps (f)","slot":"legs","bonuses":[0,0,0,-2,27,35,30,39,46,37,0,2,0,1],"id":27241},
     {"name":"Masori mask (f)","slot":"head","bonuses":[0,0,0,-1,12,8,10,12,12,9,0,2,0,1],"id":27235},
     {"name":"Masori body (f)","slot":"body","bonuses":[0,0,0,-4,43,59,52,64,74,60,0,4,0,1],"id":27238},
-    {"name":"Ancestral hat","slot":"head","bonuses":[0,0,0,8,0,0,0,0,0,0,0,0,3,0],"id":21018}
+    {"name":"Ancestral hat","slot":"head","bonuses":[0,0,0,8,0,0,0,0,0,0,0,0,3,0],"id":21018}*/
+    {"name":"Amulet of rancor","slot":"neck","bonuses":[20,20,20,0,0,0,0,0,0,0,12,0,0,2],"id":696969}
 ]
 
 // // const db = {};
