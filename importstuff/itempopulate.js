@@ -118,7 +118,7 @@ const itemList = [
 	{"name":"Toxic blowpipe (Rune)","slot":"2h","bonuses":[0,0,0,0,30,0,0,0,0,0,0,46,0,0],"id":12926,"category":"Thrown","speed":3},
 	{"name":"Toxic blowpipe (Amethyst)","slot":"2h","bonuses":[0,0,0,0,30,0,0,0,0,0,0,48,0,0],"id":12926,"category":"Thrown","speed":3},
 	{"name":"Toxic blowpipe (Dragon)","slot":"2h","bonuses":[0,0,0,0,30,0,0,0,0,0,0,55,0,0],"id":12926,"category":"Thrown","speed":3},
-    {"name":"Amulet of rancor","slot":"neck","bonuses":[20,20,20,0,0,0,0,0,0,0,12,0,0,2],"id":696969}
+    	{"name":"Amulet of rancor","slot":"neck","bonuses":[25,25,25,-6,-8,0,0,0,0,0,12,0,0,2],"id":696969}
 
 ]
 
