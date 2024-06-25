@@ -26,7 +26,7 @@ const customs = [
     {"name":"Masori mask (f)","slot":"head","bonuses":[0,0,0,-1,12,8,10,12,12,9,0,2,0,1],"id":27235},
     {"name":"Masori body (f)","slot":"body","bonuses":[0,0,0,-4,43,59,52,64,74,60,0,4,0,1],"id":27238},
     {"name":"Ancestral hat","slot":"head","bonuses":[0,0,0,8,0,0,0,0,0,0,0,0,3,0],"id":21018}*/
-    {"name":"Amulet of rancor","slot":"neck","bonuses":[20,20,20,0,0,0,0,0,0,0,12,0,0,2],"id":696969}
+    {"name":"Amulet of rancor","slot":"neck","bonuses":[25,25,25,-6,-8,0,0,0,0,0,12,0,0,2],"id":696969}
 ]
 
 // // const db = {};
