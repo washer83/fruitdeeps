@@ -17,7 +17,7 @@ export default function Index() {
     return (
         <>
             <Head>
-                <title>fruitdeeps</title>
+                <title>WASHERDEEPS</title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
                 <meta name="description" content="OSRS DPS calculator and combinatorics solver" />
@@ -25,7 +25,7 @@ export default function Index() {
                 <meta name="msapplication-TileColor" content="#33333" />
                 <meta name="msapplication-TileImage" content="/assets/strawberry thing.svg" />
                 <meta property="og:image" content="/assets/strawberry thing.svg" />
-                <meta property="og:title" content="Fruitdeeps" />
+                <meta property="og:title" content="WasherDPS" />
                 <meta property="og:description" content="Fruitdeeps is a precise and user friendly DPS calculator" />
                 <meta property="og:type" content="website" />
                 <meta property="twitter:card" content="summary_large_image" />
@@ -46,9 +46,9 @@ export default function Index() {
                             src="/assets/strawberry thing.svg"
                             width={32} // Adjust width as needed
                             height={32} // Adjust height as needed
-                            alt="fruitdeeps"
+                            alt="WASHERDEEPS"
                         />
-                        {" "}fruitdeeps{" "}
+                        {" "}WASHDERDEEPS{" "}
                     </h1>
                     <a href='https://discord.gg/YexDtAkXMQ' target="_blank" rel="noopener noreferrer" className='page-subtitle'>
                         <Image

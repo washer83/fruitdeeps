@@ -118,13 +118,8 @@ const itemList = [
 	{"name":"Toxic blowpipe (Rune)","slot":"2h","bonuses":[0,0,0,0,30,0,0,0,0,0,0,46,0,0],"id":12926,"category":"Thrown","speed":3},
 	{"name":"Toxic blowpipe (Amethyst)","slot":"2h","bonuses":[0,0,0,0,30,0,0,0,0,0,0,48,0,0],"id":12926,"category":"Thrown","speed":3},
 	{"name":"Toxic blowpipe (Dragon)","slot":"2h","bonuses":[0,0,0,0,30,0,0,0,0,0,0,55,0,0],"id":12926,"category":"Thrown","speed":3},
-<<<<<<< HEAD
     {"name":"Amulet of rancor","slot":"neck","bonuses":[25,25,25,-6,-8,0,0,0,0,0,12,0,0,2],"id":696969},
-	{"name":"Noxious Halbred", "slot":"2h","bonuses":[80,132,0,0,0,0,0,0,0,0,142,0,0,0],"id":696969}
-=======
-    	{"name":"Amulet of rancor","slot":"neck","bonuses":[25,25,25,-6,-8,0,0,0,0,0,12,0,0,2],"id":696969}
->>>>>>> a975d9234586475979933f18f2b21df9662c7ca4
-
+	{"name":"Noxious Halberd", "slot":"2h","bonuses":[80,132,0,0,0,0,0,0,0,0,142,0,0,0],"id":69696969,"category":"Polearm","speed":5}
 ]
 
 const itemNames = itemList.map((item) => item.name)
