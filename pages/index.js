@@ -48,7 +48,7 @@ export default function Index() {
                             height={32} // Adjust height as needed
                             alt="WASHERDEEPS"
                         />
-                        {" "}WASHDERDEEPS{" "}
+                        {" "}haha lol dps calc haha{" "}
                     </h1>
                     <a href='https://discord.gg/YexDtAkXMQ' target="_blank" rel="noopener noreferrer" className='page-subtitle'>
                         <Image
